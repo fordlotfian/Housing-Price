@@ -31,7 +31,7 @@ def results():
     print(data)
     print(data.info())
     # prediction=10000000
-    model_fit = pickle_boy('model\model_fit.pickle')
+    model_fit = pickle_boy('model/model_fit.pickle')
     predictions = data_prep_and_pred(data, model_fit)
     return render_template("housing-pred.html", prediction=round(predictions[0]))
 
